@@ -1,0 +1,14 @@
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+    - name: Prometheus
+      type: prometheus
+      url: http://prometheus-server.monitoring.svc.cluster.local
+      access: proxy
+      isDefault: true
+    #- name: InfluxDB
+    #  type: influxdb
+    #  url: http://influx-influxdb.monitoring:8086
+    #  access: proxy
+    #  isDefault: false   
